@@ -91,7 +91,40 @@ p {
 	border-radius: 6px;
 }
 
+#gist_snippet {
+width: 95%;
+height: auto;
+min-height: 415px;
+}
 
+.snippet_input {
+float:left;
+width: 70%;
+}
+
+#gist_description {
+width: 95%;
+min-height: 310px;	
+}
+
+.description_input {
+float: left;
+width: 28%;
+}
+
+#gist_lang {
+width: 95%;
+}
+
+.lang_input {
+float: left;
+width: 28%;
+}
+
+.field label {
+font-size: 23px;
+font-weight: 700;
+}
 
 /* footer */
 

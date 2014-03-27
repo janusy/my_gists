@@ -91,7 +91,40 @@ p {
 	border-radius: 6px;
 }
 
+#gist_snippet {
+width: 95%;
+height: auto;
+min-height: 415px;
+}
 
+.snippet_input {
+float:left;
+width: 70%;
+}
+
+#gist_description {
+width: 95%;
+min-height: 340px;	
+}
+
+.description_input {
+float: left;
+width: 28%;
+}
+
+#gist_lang {
+width: 95%;
+}
+
+.lang_input {
+float: left;
+width: 28%;
+}
+
+.field label {
+font-size: 23px;
+font-weight: 700;
+}
 
 /* footer */
 
@@ -124,24 +157,4 @@ footer ul li {
   margin-left: 10px;
 }
 
-    //-------------------------------------------------------------------------------
-    //   Pagination fix for will_paginate and bootstrap
-    //-------------------------------------------------------------------------------
 
-    .pagination {
-      span.disabled {
-        color: #aaa !important;
-      }
-      em.current {
-        float: left;
-        padding: 0 14px;
-        line-height: 38px;
-        text-decoration: none;
-        background-color: white;
-        border: 1px solid #DDD;
-        border-left-width: 0;
-      }
-      .previous_page {
-        border-left: 1px solid #ddd;
-      }
-    }
