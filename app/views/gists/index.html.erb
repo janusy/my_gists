@@ -20,10 +20,12 @@
 </div>
 
 
+<div class="center hero-unit">
 
 
 <h1>Listing gists</h1>
 
+<%= will_paginate %>
 <table>
   <thead>
     <tr>
@@ -42,17 +44,17 @@
         <td><%= gist.snippet %></td>
         <td><%= gist.lang %></td>
         <td><%= gist.description %></td>
-        <td><%= link_to 'Show', gist, :class => "btn btn-large btn-success" %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist) %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
+        <td><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
+        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+<%= will_paginate %>
 <br>
 
-<%= link_to 'New Gist', new_gist_path %>
+<%= link_to 'New Gist', new_gist_path, :class => "btn btn-large btn-inverse" %>
 
 
 
@@ -75,3 +77,5 @@
     </ul>
   </nav>
 </footer>
+</div>
+
