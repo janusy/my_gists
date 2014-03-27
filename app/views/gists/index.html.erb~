@@ -40,7 +40,7 @@
 
   <tbody>
     <% @gists.each do |gist| %>
-      <tr>
+      <tr style="height:100px;">
         <td style="width:400px;"><%= gist.snippet %></td>
         <td><%= gist.lang %></td>
         <td style="width:200px;"><%= gist.description %></td>
