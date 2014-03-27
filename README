@@ -1,0 +1,25 @@
+== MY GISTS
+Aplikacja na zaliczenie przedmiotu Architektura serwisów internetowych, zapisuje kawałki kodu, informację, w jakim języku kod został napisany oraz jego opis.
+
+== Aplikacja w sieci
+http://janusygists.herokuapp.com/
+
+== Funkcjonalności podstawowe
+* Dodawanie Gistów
+* Przeglądanie dodanych gistów
+* Wyświetlanie całych gistów pojedynczo
+* Edycja gistów
+* Usuwanie gistów
+
+== Funkcjonalności dodatkowe
+* Kolorowanie kodu w podglądzie gistów
+* Paginacja
+* Ucinanie kodu na stronie głównej
+
+== Gemy
+* pygments.rb
+* redcarpet
+* quiet_assets
+* bootstrap
+* sass-rails
+* will_paginate
