@@ -78,6 +78,19 @@ p {
 	  border-radius:0px;
 }
 
+.navbar {
+margin-bottom: 0px;
+}
+
+.show_info {
+float:left;
+}
+
+.show_info p{
+font-size:22px;
+}
+
+
 .hero-unit {
 	padding: 60px;
 	margin-bottom: 30px;
@@ -104,7 +117,7 @@ width: 70%;
 
 #gist_description {
 width: 95%;
-min-height: 340px;	
+min-height: 310px;	
 }
 
 .description_input {

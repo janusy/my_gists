@@ -21,7 +21,7 @@
     <%= f.label :snippet %><br>
     <%= f.text_area :snippet %>
   </div>
-  <div class="field">
+  <div class="field lang_input">
     <%= f.label :lang %><br>
     <%= f.select :lang, all_lexers %>
   </div>

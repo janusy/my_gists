@@ -33,13 +33,12 @@
   <strong>Description:</strong>
   <%= @gist.description %>
 </p>
-<p>
-  <strong>Snippet:</strong>
-</p>
 </div>
 <div style="clear:both;"></div>
 
-
+<p>
+  <strong>Snippet:</strong>
+</p>
 <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
 
 <%= link_to 'Edit', edit_gist_path(@gist) %> |
