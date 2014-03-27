@@ -33,14 +33,15 @@
   <strong>Description:</strong>
   <%= @gist.description %>
 </p>
-</div>
-<div style="clear:both;"></div>
-
 <p>
   <strong>Snippet:</strong>
 </p>
+</div>
+<div style="clear:both;"></div>
+
+
 <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
 
-<%= link_to 'Edit', edit_gist_path(@gist) %> |
-<%= link_to 'Back', gists_path %>
+<%= link_to 'Edit', edit_gist_path(@gist), :class => "btn btn-large btn-warning" %> 
+<%= link_to 'Back', gists_path, :class => "btn btn-large btn-primary" %>
 </div>

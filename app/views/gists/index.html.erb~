@@ -23,7 +23,7 @@
 <div class="center hero-unit">
 
 
-<h1>Listing gists</h1>
+<h1>Your gists</h1>
 
 <%= will_paginate %>
 <table>
@@ -41,9 +41,9 @@
   <tbody>
     <% @gists.each do |gist| %>
       <tr>
-        <td><%= gist.snippet %></td>
+        <td style="width:400px;"><%= gist.snippet %></td>
         <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
+        <td style="width:200px;"><%= gist.description %></td>
         <td><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
         <td><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
         <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %></td>
