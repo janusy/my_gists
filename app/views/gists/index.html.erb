@@ -42,7 +42,7 @@
     <% @gists.each do |gist| %>
       <tr style="height:100px;">
         <td><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %></td> 
-        <td><%= gist.lang %></td>
+        <td style="width:200px;"><%= gist.lang %></td>
         <td style="width:200px;"><%= gist.description %></td>
         <td><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
         <td><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
