@@ -107,7 +107,7 @@
 	</div>
 
 
-	<div class="btn-group" style="margin-bottom:30px;">
+	<div class="btn-group" style="margin-bottom:60px;">
 	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 	    Action <span class="caret"></span>
 	  </button>

@@ -8,7 +8,9 @@ html {
 }
 
 body {
-  padding-top: 0px;
+  	padding-top: 0px;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
 }
 
 section {
@@ -338,7 +340,7 @@ ul { padding: 0; }
 	display:none !important;
 }
 
-#mobile_box {
+.mobile_box {
 	display:none !important;
 }
 
