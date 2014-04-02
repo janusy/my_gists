@@ -314,9 +314,16 @@ text-decoration: none;
 border: 1px solid #ddd;
 }
 
+.button_show, .button_edit, .button_delete {
+	float:left;
+}
+
 @media only screen and (max-width: 800px) {
 	#unseen table td:nth-child(2), 
 	#unseen table th:nth-child(2) {display: none;}
+.button_show, .button_edit, .button_delete {
+	float:left;
+}
 }
  
 @media only screen and (max-width: 640px) {
@@ -326,6 +333,9 @@ border: 1px solid #ddd;
 	#unseen table th:nth-child(7),
 	#unseen table td:nth-child(8),
 	#unseen table th:nth-child(8){display: none;}
+.button_show, .button_edit, .button_delete {
+	float:left;
+}
 }
 
 
