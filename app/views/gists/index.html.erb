@@ -85,7 +85,7 @@
 
 <%= will_paginate %>
 <table>
-  <thead>
+  <thead id="header_thread">
     <tr>
       <th>Snippet</th>
       <th>Lang</th>
@@ -100,6 +100,12 @@
     <% @gists.each do |gist| %>
       <tr style="height:100px;">
         <td class="snippet_box"><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
+	
+	<div class="mobile_box">
+		lang: <%= gist.lang %>
+		description: <%= gist.description %>
+	</div>
+
 
 	<div class="btn-group">
 	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">

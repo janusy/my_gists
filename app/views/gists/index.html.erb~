@@ -85,7 +85,7 @@
 
 <%= will_paginate %>
 <table>
-  <thead>
+  <thead id="header_thread">
     <tr>
       <th>Snippet</th>
       <th>Lang</th>
@@ -100,6 +100,12 @@
     <% @gists.each do |gist| %>
       <tr style="height:100px;">
         <td class="snippet_box"><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
+	
+	<div id="mobile_box">
+		lang: <%= gist.lang %>
+		description: <%= gist.description %>
+	</div>
+
 
 	<div class="btn-group">
 	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -109,7 +115,6 @@
 	    <li><%= link_to 'Show', gist%></li>
 	    <li><%= link_to 'Edit', edit_gist_path(gist) %></li>
 	    <li><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-	    <li><a href="#">Separated link</a></li>
 	  </ul>
 	</div>
 
