@@ -41,12 +41,19 @@
   <tbody>
     <% @gists.each do |gist| %>
       <tr style="height:100px;">
-        <td><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %></td> 
-        <td style="width:200px;"><%= gist.lang %></td>
-        <td style="width:200px;"><%= gist.description %></td>
-        <td><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %></td>
+        <td class="snippet_box"><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %></td> 
+        <td class="lang_box"><%= gist.lang %></td>
+        <td class="description_box"><%= gist.description %></td>
+        <td class="button_show"><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
+        <td class="button_edit"><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
+        <td class="button_delete"><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %>
+<ul class="dropdown-menu">
+      		<li><a href="#">Dropdown link 1</a></li>
+      		<li><a href="#">Dropdown link 2</a></li>
+    	</ul>
+
+</td>
+	
       </tr>
     <% end %>
   </tbody>
