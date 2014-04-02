@@ -313,6 +313,9 @@ line-height: 34px;
 text-decoration: none;
 border: 1px solid #ddd;
 }
+.snippet_box {}
+.description_box {}
+.lang_box {}
 
 .button_show, .button_edit, .button_delete {
 	float:left;

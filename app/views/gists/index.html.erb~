@@ -1,5 +1,5 @@
 
-
+<!--
   <div class="navbar navbar-inverse">
     <div class="navbar-inner">
 	<%= link_to "My gists", 'http://janusygists.herokuapp.com/', id: "logo" %>
@@ -18,6 +18,30 @@
   
   </div>
 </div>
+-->
+
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Responsive Tables</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#unseen">The Unseen Column</a></li>
+              <li><a href="#flip-scroll">Flip Scroll</a></li>
+			  <li><a href="#no-more-tables">No More Tables</a></li>
+            </ul>
+			  <p class="navbar-text pull-right">collated by <a href="http://elvery.net">Simon Elvery</a></p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
 
 
 <div class="center hero-unit">
@@ -47,10 +71,7 @@
         <td class="button_show"><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
         <td class="button_edit"><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
         <td class="button_delete"><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %>
-<ul class="dropdown-menu">
-      		<li><a href="#">Dropdown link 1</a></li>
-      		<li><a href="#">Dropdown link 2</a></li>
-    	</ul>
+
 
 </td>
 	
