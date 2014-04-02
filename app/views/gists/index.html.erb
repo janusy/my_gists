@@ -102,12 +102,12 @@
         <td class="snippet_box"><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
 	
 	<div class="mobile_box">
-		lang: <%= gist.lang %>
-		description: <%= gist.description %>
+		<h4>lang: <%= gist.lang %></h4>
+		description: <div class="highlight"><pre style="background-color: #ccc;"><%= gist.description %></pre></div>
 	</div>
 
 
-	<div class="btn-group">
+	<div class="btn-group" style="margin-bottom:60px;">
 	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 	    Action <span class="caret"></span>
 	  </button>
