@@ -322,6 +322,10 @@ ul { padding: 0; }
 	float:left;
 }
 
+.collapse {
+	display: block;
+	}
+
 @media only screen and (max-width: 800px) {
 	#unseen table td:nth-child(2), 
 	#unseen table th:nth-child(2) {display: none;}
@@ -343,7 +347,7 @@ ul { padding: 0; }
 }
 
 
-@media only screen and (max-width: 980px) {
+@media screen and (min-width:541px) and (max-width: 1970px) {
 	.collapse {
 	display: block;
 	}
