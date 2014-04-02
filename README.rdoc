@@ -18,8 +18,6 @@ http://janusygists.herokuapp.com/
 
 == Gemy
 * pygments.rb
-* redcarpet
-* quiet_assets
 * bootstrap
 * sass-rails
 * will_paginate
