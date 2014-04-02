@@ -1,6 +1,8 @@
 @import "bootstrap";
 
-
+.navbar .btn-navbar {
+     display: inline-block;
+}
 
 
 
