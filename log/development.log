@@ -2200,3 +2200,347 @@ ActionController::RoutingError (No route matches [GET] "/js/bootstrap.min.js"):
   Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.7ms)
   Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
   Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (145.6ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-02 17:47:08 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (135.6ms)
+  Rendered gists/new.html.erb within layouts/application (152.0ms)
+Completed 200 OK in 200ms (Views: 196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/js/bootstrap.min.js" for 127.0.0.1 at 2014-04-02 17:47:08 +0200
+
+ActionController::RoutingError (No route matches [GET] "/gists/js/bootstrap.min.js"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (167.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 17:47:13 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.0ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (116.4ms)
+Completed 200 OK in 193ms (Views: 184.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2014-04-02 17:47:13 +0200
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap.min.js"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (158.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 17:50:19 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (86.5ms)
+Completed 200 OK in 4684ms (Views: 4671.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/css/bootstrap.css" for 127.0.0.1 at 2014-04-02 17:50:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (178.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (372.2ms)
+
+
+Started GET "/css/bootstrap-responsive.css" for 127.0.0.1 at 2014-04-02 17:50:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/css/bootstrap-responsive.css"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.5ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.0ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (170.3ms)
+
+
+Started GET "/js/bootstrap.min.js" for 127.0.0.1 at 2014-04-02 17:50:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/js/bootstrap.min.js"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/student/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.2ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (148.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 17:53:36 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.1ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (66.2ms)
+Completed 200 OK in 113ms (Views: 107.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:02:06 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (4.9ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (118.7ms)
+Completed 200 OK in 169ms (Views: 160.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:03:14 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.0ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (107.8ms)
+Completed 200 OK in 175ms (Views: 169.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:04:17 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (108.9ms)
+Completed 200 OK in 167ms (Views: 163.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:04:24 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.9ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 94ms (Views: 90.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:04:47 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.9ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (101.2ms)
+Completed 200 OK in 140ms (Views: 129.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:05:52 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.1ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (83.3ms)
+Completed 200 OK in 119ms (Views: 114.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:07:35 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (4.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (90.6ms)
+Completed 200 OK in 141ms (Views: 126.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:08:10 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:10:13 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (75.2ms)
+Completed 200 OK in 117ms (Views: 112.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:18:03 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (85.8ms)
+Completed 500 Internal Server Error in 445ms
+
+ActionView::Template::Error (Invalid CSS after "*/": expected identifier, was ""
+  (in /home/student/janos/my_gists/app/assets/stylesheets/custom.css.scss:353)):
+    2: <html>
+    3: <head>
+    4:   <title>MyGists</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/custom.css.scss:353
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__824282355_89515120'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.1ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:18:36 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (67.6ms)
+Completed 500 Internal Server Error in 172ms
+
+ActionView::Template::Error (Invalid CSS after "  *zoom:": expected pseudoclass or pseudoelement, was " 1;"
+  (in /home/student/janos/my_gists/app/assets/stylesheets/custom.css.scss:213)):
+    2: <html>
+    3: <head>
+    4:   <title>MyGists</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/custom.css.scss:213
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__824282355_89515120'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (51.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:19:01 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (5.9ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (88.8ms)
+Completed 200 OK in 3710ms (Views: 3700.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-02 18:19:25 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (4.4ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (82.6ms)
+Completed 200 OK in 4972ms (Views: 4964.1ms | ActiveRecord: 4.9ms)
