@@ -9,8 +9,8 @@ html {
 
 body {
   	padding-top: 0px;
-	padding-right: 20px !important;
-	padding-left: 20px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
 }
 
 section {
@@ -344,12 +344,26 @@ ul { padding: 0; }
 	display:none !important;
 }
 
-@media only screen and (max-width: 800px) {
-	#unseen table td:nth-child(2), 
-	#unseen table th:nth-child(2) {display: none;}
-.button_show, .button_edit, .button_delete {
-	float:left;
+.navbar-fixed-top {
+	margin-bottom: 0px !important;
 }
+
+.navbar .brand {
+	margin-left: 45px;
+}
+
+.navbar .btn-navbar {
+	margin-right: 30px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+		#unseen table td:nth-child(2), 
+		#unseen table th:nth-child(2) {display: none;}
+	.button_show, .button_edit, .button_delete {
+		float:left;
+	}
 }
  
 @media only screen and (max-width: 640px) {
