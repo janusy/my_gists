@@ -334,6 +334,10 @@ ul { padding: 0; }
 	display: block !important;
 	}
 
+.dropdown-toggle {
+	display:none !important;
+}
+
 @media only screen and (max-width: 800px) {
 	#unseen table td:nth-child(2), 
 	#unseen table th:nth-child(2) {display: none;}
@@ -357,7 +361,9 @@ ul { padding: 0; }
 .button_show, .button_edit, .button_delete {
 	display:none;
 	}
-
+.dropdown-toggle {
+	display:block;
+}
 
 }
 
