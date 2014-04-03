@@ -42,6 +42,6 @@
 
 <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
 
-<%= link_to 'Edit', edit_gist_path(@gist), :class => "btn btn-large btn-warning" %> 
+<%= link_to 'Edit', edit_gist_path(@gist), :class => "btn btn-large" %> 
 <%= link_to 'Back', gists_path, :class => "btn btn-large btn-primary" %>
 </div>

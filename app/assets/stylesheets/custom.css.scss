@@ -361,6 +361,20 @@ ul { padding: 0; }
 }
 
 
+.form-group {
+	float:left;
+	margin-right: 8px;
+}
+
+
+.nav > .pull-right {
+	width:350px;
+}
+
+
+.navbar-fixed-top .container {
+	float:left;
+}
 
 @media only screen and (max-width: 800px) {
 		#unseen table td:nth-child(2), 
