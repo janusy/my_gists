@@ -366,11 +366,9 @@ ul { padding: 0; }
 	margin-right: 8px;
 }
 
-
 .nav > .pull-right {
 	width:350px;
 }
-
 
 .navbar-fixed-top .container {
 	float:left;
