@@ -1,0 +1,58 @@
+<div class="all" >
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <nav>
+      <ul class="nav pull-left">
+        <li>
+          <a href="/gists">MyGists</a>
+        </li>
+        <li>
+          <a href="http://www.github.com/waveq/MyGists">Projekt na githubie</a>
+        </li>
+        <li>
+          <a href="/gists/new">Quick add</a>
+        </li>
+        <li class="divider-vertical" />
+      </ul>
+      <ul class="nav pull-right hidden-xs">
+        <form class="navbar-form navbar-left pull-right" role="search" action="/gists/search">
+          <div class="form-group">
+            <%= select_tag(:lang, options_for_select(Pygments.lexers.keys.sort.map! {|l| l.downcase.strip},
+             params[:lang]))%>
+           </div>
+           <button type="submit" class="btn btn-default">Search</button>
+         </form>
+       </ul>
+    </nav>
+  
+  </div>
+</div>
+
+<div class="center hero-unit">
+        
+
+<h1>Znalezione gisty:</h1><br />
+
+    <% @gists.each do |gist| %>
+<div class="gistBox">
+
+
+  <div class="codeBox">
+    <%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
+  </div>
+  <div class="langBox">
+          <%= gist.lang %>
+  </div>
+  <div class="descriptionBox">
+          <%= gist.description %>
+  </div>
+  <div class="buttonBox">
+          <%= link_to 'PokaÅ¼', gist, :class => "btn  btn-success" %>
+          <%= link_to 'Edytuj', edit_gist_path(gist), :class => "btn btn-warning" %>
+         <%= link_to 'UsuÅ„', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+  </div>
+</div> <!-- gistBox -->
+    <% end %>
+</div> <!-- gitstsBox -->
+
+

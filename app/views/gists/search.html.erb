@@ -23,6 +23,8 @@
           <a href="/gists/new">Add gist</a>
         </li>
       </ul>
+      </div>
+    </div>
 
 
 	<ul class="nav pull-right hidden-xs">
@@ -38,15 +40,6 @@
 
 
 
-      </div>
-    </div>
-
-
-
-
-
-
-
 
   </div>
 </div>
@@ -56,7 +49,6 @@
 
 <h1>Your gists</h1>
 
-<%= will_paginate %>
 <table>
   <thead id="header_thread">
     <tr>
@@ -106,7 +98,7 @@
     <% end %>
   </tbody>
 </table>
-<%= will_paginate %>
+
 <br>
 
 <%= link_to 'New Gist', new_gist_path, :class => "btn btn-large btn-inverse" %>

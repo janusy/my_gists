@@ -3112,3 +3112,521 @@ Processing by GistsController#index as HTML
   [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
   Rendered gists/index.html.erb within layouts/application (91.2ms)
 Completed 200 OK in 4613ms (Views: 4603.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 20:39:49 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (107.3ms)
+Completed 200 OK in 5533ms (Views: 5528.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 20:47:21 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (198.9ms)
+Completed 200 OK in 280ms (Views: 260.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 20:47:35 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (108.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 20:50:28 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (2.9ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (193.7ms)
+Completed 200 OK in 238ms (Views: 228.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/gists/search?lang=antlr+with+cpp+target" for 127.0.0.1 at 2014-04-02 20:50:34 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"antlr with cpp target", "id"=>"search"}
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (200.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 20:56:53 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.9ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (163.8ms)
+Completed 200 OK in 214ms (Views: 197.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists/search?lang=antlr+with+cpp+target" for 127.0.0.1 at 2014-04-02 20:56:57 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"antlr with cpp target", "id"=>"search"}
+  [1m[36mGist Load (4.9ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 14ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (99.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 20:57:04 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.9ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (234.7ms)
+Completed 200 OK in 305ms (Views: 300.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists/search?lang=abap" for 127.0.0.1 at 2014-04-02 20:57:36 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"abap", "id"=>"search"}
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (131.0ms)
+
+
+Started GET "/gists/search?lang=abap" for 127.0.0.1 at 2014-04-02 20:59:17 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"abap", "id"=>"search"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (136.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 20:59:20 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (98.9ms)
+Completed 200 OK in 134ms (Views: 130.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists/search?lang=antlr+with+java+target" for 127.0.0.1 at 2014-04-02 20:59:25 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"antlr with java target", "id"=>"search"}
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 11ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.7ms)
+
+
+Started GET "/gists/search?lang=antlr+with+java+target" for 127.0.0.1 at 2014-04-02 21:03:53 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"antlr with java target", "id"=>"search"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (25.5ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (133.7ms)
+
+
+Started GET "/gists/search?lang=antlr+with+java+target" for 127.0.0.1 at 2014-04-02 21:03:58 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"antlr with java target", "id"=>"search"}
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 11ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.9ms)
+
+
+Started GET "/gists/search?lang=antlr+with+java+target" for 127.0.0.1 at 2014-04-02 21:05:35 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"antlr with java target", "id"=>"search"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (96.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 21:07:16 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (76.9ms)
+Completed 200 OK in 137ms (Views: 126.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 21:07:19 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (213.1ms)
+Completed 200 OK in 334ms (Views: 320.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:07:26 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:71:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (134.4ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:11:05 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[36mGist Load (1.8ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 18ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (192.1ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:14:49 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 20ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.2ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (164.7ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:19:25 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[36mGist Load (0.6ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 21ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:83:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (126.0ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:20:24 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 23ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.2ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:22:31 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 57ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (132.4ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-02 21:24:08 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"java", "id"=>"search"}
+  [1m[35mGist Load (5.5ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 11ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.0ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (32.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (241.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 21:34:44 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (1.0ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (165.1ms)
+Completed 200 OK in 236ms (Views: 231.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-02 21:36:55 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (118.7ms)
+Completed 200 OK in 193ms (Views: 188.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/gists/search?lang=asymptote" for 127.0.0.1 at 2014-04-02 21:38:45 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"asymptote", "id"=>"search"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.9ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.5ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (115.9ms)
+
+
+Started GET "/gists/search?lang=asymptote" for 127.0.0.1 at 2014-04-02 23:01:58 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"asymptote", "id"=>"search"}
+  [1m[35mGist Load (6.0ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 19ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-03 12:11:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.1ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (1970.4ms)
+Completed 200 OK in 2972ms (Views: 2836.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/gists/search?lang=ada" for 127.0.0.1 at 2014-04-03 12:11:17 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"ada", "id"=>"search"}
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (101.6ms)
+
+
+Started GET "/gists/search?lang=actionscript+3" for 127.0.0.1 at 2014-04-03 12:11:26 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"lang"=>"actionscript 3", "id"=>"search"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "search"]]
+Completed 404 Not Found in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Gist with id=search):
+  app/controllers/gists_controller.rb:75:in `set_gist'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.9ms)
+
+
+Started GET "/gists/search?lang=actionscript+3" for 127.0.0.1 at 2014-04-03 12:15:04 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"actionscript 3"}
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `search' for #<Class:0x9add1e0>):
+  app/controllers/gists_controller.rb:25:in `search'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (70.2ms)
+
+
+Started GET "/gists/search?lang=actionscript+3" for 127.0.0.1 at 2014-04-03 13:00:50 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"actionscript 3"}
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `search' for #<Class:0x9add1e0>):
+  app/controllers/gists_controller.rb:25:in `search'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.4ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (126.3ms)
+
+
+Started GET "/gists/search?lang=actionscript+3" for 127.0.0.1 at 2014-04-03 13:00:52 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"actionscript 3"}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `search' for #<Class:0x9add1e0>):
+  app/controllers/gists_controller.rb:25:in `search'
+
+
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+  Rendered /home/student/.gems/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.7ms)
+
+
+Started GET "/gists/search?lang=actionscript+3" for 127.0.0.1 at 2014-04-03 13:03:11 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"actionscript 3"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+  [1m[35mGist Load (4.0ms)[0m  SELECT "gists".* FROM "gists" WHERE (lang LIKE '%actionscript 3%')
+  Rendered gists/search.html.erb within layouts/application (94.3ms)
+Completed 200 OK in 221ms (Views: 168.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/gists/search?lang=java" for 127.0.0.1 at 2014-04-03 13:03:29 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"java"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+  [1m[36mGist Load (0.9ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (lang LIKE '%java%')[0m
+  Rendered gists/search.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 131ms (Views: 79.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:05:38 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.0ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (613.7ms)
+Completed 200 OK in 681ms (Views: 671.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/gists?page=2" for 127.0.0.1 at 2014-04-03 13:05:41 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.7ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+  Rendered gists/index.html.erb within layouts/application (225.5ms)
+Completed 200 OK in 280ms (Views: 275.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-03 13:05:43 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (0.8ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (476.8ms)
+Completed 200 OK in 513ms (Views: 508.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:05:51 +0200
+Processing by GistsController#index as HTML
+  [1m[35m (9.4ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36mGist Load (1.0ms)[0m  [1mSELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered gists/index.html.erb within layouts/application (212.8ms)
+Completed 200 OK in 254ms (Views: 240.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/gists/search?lang=abap" for 127.0.0.1 at 2014-04-03 13:05:54 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"abap"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+  [1m[35mGist Load (0.9ms)[0m  SELECT "gists".* FROM "gists" WHERE (lang LIKE '%abap%')
+  Rendered gists/search.html.erb within layouts/application (197.9ms)
+Completed 200 OK in 241ms (Views: 233.4ms | ActiveRecord: 0.9ms)

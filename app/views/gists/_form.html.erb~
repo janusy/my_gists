@@ -17,6 +17,8 @@
     </div>
   <% end %>
 
+<tr><td><%= f.select :lang, all_lexers %></td>
+
   <div class="field snippet_input">
     <%= f.label :snippet %><br>
     <%= f.text_area :snippet %>
@@ -30,6 +32,6 @@
     <%= f.text_area :description %>
   </div>
   <div class="actions">
-	<%= f.submit 'Create gist', :class => 'btn btn-large btn-default' %>
+	<%= f.submit 'Confirm', :class => 'btn btn-large btn-default' %>
   </div>
 <% end %>

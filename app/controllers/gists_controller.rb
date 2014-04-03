@@ -21,6 +21,10 @@ class GistsController < ApplicationController
     @gist = Gist.new
   end
 
+  def search
+    @gists = Gist.search(params[:lang])
+  end
+
   # GET /gists/1/edit
   def edit
   end

@@ -349,7 +349,7 @@ ul { padding: 0; }
 }
 
 .navbar .brand {
-	padding-left: 45px;
+	padding-left: 45px !important;
 }
 
 .navbar .btn-navbar {
