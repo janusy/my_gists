@@ -25,7 +25,7 @@
       </ul>
 
 
-	<ul class="nav pull-right hidden-xs"  style="display: table !important;">
+	<ul class="nav pull-right hidden-xs"  style="display: block !important;">
         <form class="navbar-form navbar-left pull-right" role="search" action="/gists/search">
           <div class="form-group">
             <%= select_tag(:lang, options_for_select(Pygments.lexers.keys.sort.map! {|l| l.downcase.strip},
