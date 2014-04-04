@@ -94,9 +94,13 @@ font-size:22px;
 }
 
 .highlight {
-text-align:left;
+	text-align:left;
+	margin-right: 15px;
 }
 
+th {
+	text-align: center !important;
+}
 
 .hero-unit {
 	padding: 60px;
@@ -330,6 +334,7 @@ ul { padding: 0; }
 .button_show, .button_edit, .button_delete {
 	float:left;
 	padding-left: 25px;
+	padding-bottom: 10px;
 }
 
 .collapse {

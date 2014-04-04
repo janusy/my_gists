@@ -94,9 +94,13 @@ font-size:22px;
 }
 
 .highlight {
-text-align:left;
+	text-align:left;
+	margin-right: 15px;
 }
 
+th {
+	text-align: center !important;
+}
 
 .hero-unit {
 	padding: 60px;
@@ -397,7 +401,7 @@ ul { padding: 0; }
 	}
 }
  
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 740px) {
 	#unseen table td:nth-child(4),
 	#unseen table th:nth-child(4),
 	#unseen table td:nth-child(7),
