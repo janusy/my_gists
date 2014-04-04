@@ -61,7 +61,7 @@
 
   <tbody>
     <% @gists.each do |gist| %>
-      <tr style="height:100px;">
+      <tr class="gist_tr" style="height:100px;">
         <td class="snippet_box"><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
 	
 	<div class="mobile_box">
