@@ -85,13 +85,21 @@
 	</td> 
         <td class="lang_box"><%= gist.lang %></td>
         <td class="description_box"><%= gist.description %></td>
-        <td class="button_show"><%= link_to 'Show', gist, :class => "btn btn-large" %></td>
-        <td class="button_edit"><%= link_to 'Edit', edit_gist_path(gist), :class => "btn btn-large" %></td>
-        <td class="button_delete"><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %>
-
-
-</td>
-	
+	<td class="button_show">
+		<%= link_to gist, class: 'btn btn-primary btn-large active' do %>
+			<span class="icon-white icon-eye-open"></span> Show
+	    	<% end %>
+	</td>
+	<td class="button_edit">
+		<%= link_to edit_gist_path(gist), class: 'btn btn-success btn-large active' do %>
+			<span class="glyphicon glyphicon-pencil"> Edit</span>
+	    	<% end %>
+	</td>
+	<td class="button_delete">
+		<%= link_to gist, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-large active' do %>
+			<span class="glyphicon icon-white icon-fire"></span> Destroy
+	    	<% end %>
+	</td>	
       </tr>
     <% end %>
   </tbody>
