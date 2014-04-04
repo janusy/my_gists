@@ -1,4 +1,4 @@
-	<%= will_paginate %>
+
       <tr class="gist_tr" style="height:100px;">
         <td class="snippet_box"><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
 	
@@ -39,3 +39,4 @@
 	    	<% end %>
 	</td>	
       </tr>
+

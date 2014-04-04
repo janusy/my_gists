@@ -60,11 +60,11 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="gists-list">
 <%= will_paginate %>
-	<div id="gists-list">
+
        		<%= render @gists %>
-  	</div>	
+
 
   </tbody>
 </table>

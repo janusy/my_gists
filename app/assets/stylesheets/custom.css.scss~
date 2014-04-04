@@ -320,7 +320,7 @@ ul { padding: 0; }
 	text-decoration: none;
 	border: 1px solid #ddd;
 }
-.snippet_box { width:65%;}
+.snippet_box { width:55%;}
 .description_box {
 	padding-right: 25px;
 	padding-left: 25px;
@@ -348,7 +348,7 @@ ul { padding: 0; }
 .mobile_box {
 	display:none !important;
 }
-
+/*
 .navbar-fixed-top {
 	margin-bottom: 0px !important;
 }
@@ -405,6 +405,10 @@ tr.gist_tr:hover {
 .btn-large [class^="icon-"], .btn-large [class*=" icon-"] {
 	margin-top: 4px;
 }
+
+.btn-large {
+	font-size: 13.5px;
+}*/
 
 @media only screen and (max-width: 800px) {
 		#unseen table td:nth-child(2), 
