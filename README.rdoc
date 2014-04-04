@@ -13,14 +13,20 @@ http://janusygists.herokuapp.com/
 
 == Funkcjonalności dodatkowe
 * Kolorowanie kodu w podglądzie gistów
+* Infinity scrolling
+* Wybór języka
+* Wyszukiwanie gistów z danego języka
 * Paginacja
 * Ucinanie kodu na stronie głównej
+* Responsive Web Design
 
 == Gemy
 * pygments.rb
 * bootstrap
 * sass-rails
 * will_paginate
+* redcarpet
+* quiet_assets
 
 ==Wersje
 ruby 2.0.0p451
