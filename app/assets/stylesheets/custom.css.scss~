@@ -417,7 +417,7 @@ tr.gist_tr:hover {
 		float:left;
 	}
 	.button_show {
-		padding-left:20px;
+		padding-left:25px;
 	}
 }
  

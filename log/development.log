@@ -8422,3 +8422,12 @@ Processing by GistsController#index as HTML
   Rendered gists/_gist.html.erb (43.1ms)
   Rendered gists/index.html.erb within layouts/application (83.1ms)
 Completed 200 OK in 105ms (Views: 101.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-04 21:48:44 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/_gist.html.erb (100.1ms)
+  Rendered gists/index.html.erb within layouts/application (277.2ms)
+Completed 200 OK in 4603ms (Views: 4595.9ms | ActiveRecord: 2.0ms)

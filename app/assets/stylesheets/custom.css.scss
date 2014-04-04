@@ -406,18 +406,12 @@ tr.gist_tr:hover {
 	margin-top: 4px;
 }
 
-.button_show {
-	padding-left:0px;
-}
 
 @media only screen and (max-width: 800px) {
 		#unseen table td:nth-child(2), 
 		#unseen table th:nth-child(2) {display: none;}
 	.button_show, .button_edit, .button_delete {
 		float:left;
-	}
-	.button_show {
-		padding-left:25px;
 	}
 }
  
