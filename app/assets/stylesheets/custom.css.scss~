@@ -348,7 +348,7 @@ ul { padding: 0; }
 .mobile_box {
 	display:none !important;
 }
-/*
+
 .navbar-fixed-top {
 	margin-bottom: 0px !important;
 }
@@ -406,15 +406,18 @@ tr.gist_tr:hover {
 	margin-top: 4px;
 }
 
-.btn-large {
-	font-size: 13.5px;
-}*/
+.button_show {
+	padding-left:0px;
+}
 
 @media only screen and (max-width: 800px) {
 		#unseen table td:nth-child(2), 
 		#unseen table th:nth-child(2) {display: none;}
 	.button_show, .button_edit, .button_delete {
 		float:left;
+	}
+	.button_show {
+		padding-left:20px;
 	}
 }
  
@@ -428,7 +431,6 @@ tr.gist_tr:hover {
 	.button_show, .button_edit, .button_delete {
 		float:left;
 	}
-
 
 	.button_show, .button_edit, .button_delete, .description_box, .lang_box, #header_thread  {
 		display:none;
