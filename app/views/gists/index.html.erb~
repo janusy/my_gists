@@ -31,7 +31,7 @@
             <%= select_tag(:lang, options_for_select(Pygments.lexers.keys.sort.map! {|l| l.downcase.strip},
              params[:lang]))%>
            </div>
-           <button type="submit" class="btn btn-default">Search</button>
+           <button type="submit" class="btn active"><i class="icon-search"></i></button>
          </form>
        </ul>
       </div>
@@ -97,7 +97,7 @@
 	</td>
 	<td class="button_delete">
 		<%= link_to gist, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-large active' do %>
-			<span class="glyphicon icon-white icon-fire"></span> Destroy
+			<span class="icon-white icon-fire"></span> Destroy
 	    	<% end %>
 	</td>	
       </tr>

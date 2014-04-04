@@ -4990,3 +4990,76 @@ Processing by GistsController#index as HTML
   [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
   Rendered gists/index.html.erb within layouts/application (109.5ms)
 Completed 200 OK in 159ms (Views: 150.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 17:06:31 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.9ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (223.8ms)
+Completed 200 OK in 275ms (Views: 270.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 17:06:41 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (1.0ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (118.5ms)
+Completed 200 OK in 164ms (Views: 160.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 17:07:03 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.9ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (210.4ms)
+Completed 200 OK in 282ms (Views: 273.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 17:07:07 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 140ms (Views: 136.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 17:07:33 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 126ms (Views: 122.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists/search?lang=ada" for 127.0.0.1 at 2014-04-04 17:07:43 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"ada"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE (lang LIKE '%ada%')[0m
+  Rendered gists/search.html.erb within layouts/application (408.5ms)
+Completed 200 OK in 476ms (Views: 462.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/search?lang=c" for 127.0.0.1 at 2014-04-04 17:07:51 +0200
+Processing by GistsController#search as HTML
+  Parameters: {"lang"=>"c"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/student/janos/my_gists/app/models/gist.rb:4)
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" WHERE (lang LIKE '%c%')
+  Rendered gists/search.html.erb within layouts/application (132.4ms)
+Completed 200 OK in 206ms (Views: 189.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-04 17:07:56 +0200
+Processing by GistsController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.9ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (186.8ms)
+Completed 200 OK in 223ms (Views: 218.9ms | ActiveRecord: 1.3ms)
