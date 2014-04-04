@@ -370,9 +370,25 @@ ul { padding: 0; }
 	width:350px;
 }
 
+
 .navbar-fixed-top .container {
 	float:left;
 }
+
+.navbar .nav>li>a {
+	padding: 15px 15px 10px;
+	font-size: 15px;
+}
+
+.navbar .brand:hover {
+	background:none;
+}
+
+.navbar-fixed-top .container {
+ 	float: none; 
+}
+
+
 
 @media only screen and (max-width: 800px) {
 		#unseen table td:nth-child(2), 
