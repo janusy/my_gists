@@ -4,7 +4,7 @@ jQuery ->
           more_posts_url = $('.pagination .next_page').attr('href')
          
           if more_posts_url && $(window).scrollTop() > $(document).height() - $(window).height() - 60
-            $('.pagination').html('<img style="width:250px;" src="" alt="Loading..." title="Loading..." />')
+            $('.pagination').html('<img style="width:250px;" src="http://www.burlingtoncoatfactory.com/Templates/Everything/Styles/images/ajax-loader-large.gif" alt="Loading..." title="Loading..." />')
             $.getScript more_posts_url
           return
           return
