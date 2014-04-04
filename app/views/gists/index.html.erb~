@@ -88,20 +88,17 @@
 	<td class="button_show">
 		<%= link_to gist, class: 'btn btn-primary btn-large active' do %>
 			<span class="icon-white icon-eye-open"></span> Show
-	    	<% end %><br/><br/>
+	    	<% end %>
+	</td>
+	<td class="button_edit">
 		<%= link_to edit_gist_path(gist), class: 'btn btn-success btn-large active' do %>
-			<span class="glyphicon glyphicon-pencil"> Edit</span>
-	    	<% end %><br/><br/>
+			<span class="icon-white icon-pencil"></span> Edit
+	    	<% end %>
+	</td>
+	<td class="button_delete">
 		<%= link_to gist, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-large active' do %>
 			<span class="glyphicon icon-white icon-fire"></span> Destroy
 	    	<% end %>
-
-	</td>
-	<td class="button_edit">
-		
-	</td>
-	<td class="button_delete">
-		
 	</td>	
       </tr>
     <% end %>

@@ -4963,3 +4963,30 @@ Processing by GistsController#index as HTML
   [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
   Rendered gists/index.html.erb within layouts/application (110.4ms)
 Completed 200 OK in 172ms (Views: 156.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 16:58:56 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (2.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (1.5ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (131.9ms)
+Completed 200 OK in 3547ms (Views: 3540.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 16:59:11 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.7ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (128.7ms)
+Completed 200 OK in 190ms (Views: 177.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gists?page=1" for 127.0.0.1 at 2014-04-04 17:00:26 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35mGist Load (0.8ms)[0m  SELECT "gists".* FROM "gists" ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (109.5ms)
+Completed 200 OK in 159ms (Views: 150.7ms | ActiveRecord: 1.4ms)
