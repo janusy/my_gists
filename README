@@ -2,7 +2,7 @@
 Aplikacja na zaliczenie przedmiotu Architektura serwisów internetowych, zapisuje kawałki kodu, informację, w jakim języku kod został napisany oraz jego opis.
 
 == Aplikacja w sieci
-http://janusygists.herokuapp.com/
+http://janusygists.herokuapp.com
 
 == Funkcjonalności podstawowe
 * Dodawanie Gistów
